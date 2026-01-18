@@ -14,16 +14,27 @@ For a detailed explanation of the network design, subnetting decisions, and rout
 - Wired and wireless client integration
 - End-to-end connectivity validation
 
-## Network Topology
-[View topology diagram](docs/images/topology-overview.png)
+## Project Walkthrough (Visual)
 
-## DHCP Configuration
-- [DHCP server configuration](docs/images/dhcp-server-config.png)
-- [Wired client DHCP assignment](docs/images/PC0 DHCP.png)
-- [Wireless client DHCP assignment](docs/images/wireless-dhcp-client.png)
+### Network Topology
+![Network Topology](docs/images/topology-overview.png)  
+Overall logical topology showing segmented subnets, routing device, DHCP server, and wireless access point.
 
-## Connectivity Testing
-- [Inter-subnet ping results](docs/images/inter-subnet-ping.png)
+### DHCP Server Configuration
+![DHCP Server Configuration](docs/images/dhcp-server-config.png)  
+Central DHCP server configured with multiple address pools to serve different subnets.
+
+### Wired Client DHCP Assignment
+![PC DHCP Assignment](docs/images/PC0 DHCP.png)  
+Wired client successfully receiving an IP address via DHCP.
+
+### Wireless Client DHCP Assignment
+![Wireless DHCP Client](docs/images/wireless-dhcp-client.png)  
+Wireless client receiving an IP address through the access point.
+
+### Inter-Subnet Connectivity Test
+![Inter-Subnet Ping](docs/images/inter-subnet-ping.png)  
+Ping results confirming successful communication between different subnets.
 
 ## Design Details
 For a deeper explanation of subnetting, routing, and design decisions, see:
